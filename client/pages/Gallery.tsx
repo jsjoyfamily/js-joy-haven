@@ -13,7 +13,7 @@ export default function Gallery() {
         "Special events and celebrations",
         "Safety features and child-friendly spaces",
         "Meal times and healthy eating",
-        "Rest areas and quiet spaces"
+        "Rest areas and quiet spaces",
       ]}
     />
   );

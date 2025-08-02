@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import { Construction, ArrowLeft, Home } from "lucide-react";
 
@@ -10,10 +16,10 @@ interface PlaceholderPageProps {
   comingSoonFeatures?: string[];
 }
 
-export default function PlaceholderPage({ 
-  title, 
-  description, 
-  comingSoonFeatures = [] 
+export default function PlaceholderPage({
+  title,
+  description,
+  comingSoonFeatures = [],
 }: PlaceholderPageProps) {
   return (
     <Layout>
@@ -22,11 +28,11 @@ export default function PlaceholderPage({
           <div className="w-20 h-20 bg-joy-orange/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Construction className="w-10 h-10 text-joy-orange" />
           </div>
-          
+
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {title}
           </h1>
-          
+
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             {description}
           </p>
@@ -34,7 +40,9 @@ export default function PlaceholderPage({
           {comingSoonFeatures.length > 0 && (
             <Card className="max-w-2xl mx-auto mb-8">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">Coming Soon</CardTitle>
+                <CardTitle className="text-2xl text-gray-900">
+                  Coming Soon
+                </CardTitle>
                 <CardDescription>
                   This page will include detailed information about:
                 </CardDescription>
@@ -57,26 +65,44 @@ export default function PlaceholderPage({
               Need Information Now?
             </h3>
             <p className="text-gray-600 mb-6">
-              While we're working on this page, we're happy to answer any questions you have about our daycare programs and services.
+              While we're working on this page, we're happy to answer any
+              questions you have about our daycare programs and services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-joy-orange hover:bg-joy-orange/90">
+              <Button
+                asChild
+                size="lg"
+                className="bg-joy-orange hover:bg-joy-orange/90"
+              >
                 <Link to="/contact">Contact Us</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-gray-300">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-gray-300"
+              >
                 <a href="tel:(555)123-4567">Call (555) 123-4567</a>
               </Button>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild variant="ghost" className="text-gray-600 hover:text-gray-900">
+            <Button
+              asChild
+              variant="ghost"
+              className="text-gray-600 hover:text-gray-900"
+            >
               <Link to="/">
                 <Home className="w-4 h-4 mr-2" />
                 Back to Home
               </Link>
             </Button>
-            <Button asChild variant="ghost" className="text-gray-600 hover:text-gray-900">
+            <Button
+              asChild
+              variant="ghost"
+              className="text-gray-600 hover:text-gray-900"
+            >
               <Link to="/about">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Learn About Us

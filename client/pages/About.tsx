@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import { 
-  Award, 
-  Heart, 
-  Users, 
+import {
+  Award,
+  Heart,
+  Users,
   Clock,
   BookOpen,
   Shield,
@@ -13,7 +19,7 @@ import {
   CheckCircle,
   Baby,
   Smile,
-  GraduationCap
+  GraduationCap,
 } from "lucide-react";
 
 export default function About() {
@@ -21,46 +27,54 @@ export default function About() {
     {
       icon: Heart,
       title: "Love & Care",
-      description: "Every child receives individual attention and genuine care in our nurturing environment"
+      description:
+        "Every child receives individual attention and genuine care in our nurturing environment",
     },
     {
       icon: Shield,
       title: "Safety First",
-      description: "We maintain the highest safety standards with secure facilities and trained staff"
+      description:
+        "We maintain the highest safety standards with secure facilities and trained staff",
     },
     {
       icon: BookOpen,
       title: "Learning Through Play",
-      description: "Educational activities are woven naturally into play-based learning experiences"
+      description:
+        "Educational activities are woven naturally into play-based learning experiences",
     },
     {
       icon: Users,
       title: "Family Partnership",
-      description: "We work closely with parents to support each child's unique developmental journey"
-    }
+      description:
+        "We work closely with parents to support each child's unique developmental journey",
+    },
   ];
 
   const certifications = [
     {
       icon: Award,
       title: "State Licensed",
-      description: "Fully licensed by the California Department of Social Services"
+      description:
+        "Fully licensed by the California Department of Social Services",
     },
     {
       icon: GraduationCap,
       title: "Early Childhood Education",
-      description: "Certified professionals with degrees in Early Childhood Development"
+      description:
+        "Certified professionals with degrees in Early Childhood Development",
     },
     {
       icon: Heart,
       title: "CPR & First Aid",
-      description: "All staff members are certified in infant and child CPR and first aid"
+      description:
+        "All staff members are certified in infant and child CPR and first aid",
     },
     {
       icon: BookOpen,
       title: "Continuous Learning",
-      description: "Regular training and professional development to stay current with best practices"
-    }
+      description:
+        "Regular training and professional development to stay current with best practices",
+    },
   ];
 
   const staff = [
@@ -69,22 +83,34 @@ export default function About() {
       title: "Director & Lead Caregiver",
       experience: "15+ years",
       education: "BA in Early Childhood Education",
-      specialties: ["Infant Care", "Curriculum Development", "Parent Communication"]
+      specialties: [
+        "Infant Care",
+        "Curriculum Development",
+        "Parent Communication",
+      ],
     },
     {
       name: "Jennifer Kim",
       title: "Assistant Director",
-      experience: "8+ years", 
+      experience: "8+ years",
       education: "Associate's in Child Development",
-      specialties: ["Toddler Programs", "Special Needs Support", "Creative Arts"]
+      specialties: [
+        "Toddler Programs",
+        "Special Needs Support",
+        "Creative Arts",
+      ],
     },
     {
       name: "Sarah Johnson",
       title: "Preschool Teacher",
       experience: "12+ years",
       education: "Teaching Credential + ECE Units",
-      specialties: ["School Readiness", "Language Development", "STEM Activities"]
-    }
+      specialties: [
+        "School Readiness",
+        "Language Development",
+        "STEM Activities",
+      ],
+    },
   ];
 
   return (
@@ -97,9 +123,9 @@ export default function About() {
               About Joy Family Daycare
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              For over 15 years, we've been providing exceptional childcare in a warm, 
-              family-oriented environment. Our mission is to nurture young minds and hearts 
-              while giving parents peace of mind.
+              For over 15 years, we've been providing exceptional childcare in a
+              warm, family-oriented environment. Our mission is to nurture young
+              minds and hearts while giving parents peace of mind.
             </p>
           </div>
         </div>
@@ -115,31 +141,39 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Joy Family Daycare was founded in 2009 with a simple but powerful vision: 
-                  to create a place where children could thrive in a loving, home-like environment 
-                  while receiving quality early childhood education.
+                  Joy Family Daycare was founded in 2009 with a simple but
+                  powerful vision: to create a place where children could thrive
+                  in a loving, home-like environment while receiving quality
+                  early childhood education.
                 </p>
                 <p>
-                  As parents ourselves, we understand the challenges of finding trustworthy, 
-                  high-quality childcare. That's why we've dedicated ourselves to creating 
-                  a program that treats every child like family and partners with parents 
-                  to support their child's growth and development.
+                  As parents ourselves, we understand the challenges of finding
+                  trustworthy, high-quality childcare. That's why we've
+                  dedicated ourselves to creating a program that treats every
+                  child like family and partners with parents to support their
+                  child's growth and development.
                 </p>
                 <p>
-                  Our small group sizes allow us to provide individualized attention that 
-                  larger centers simply cannot offer. We believe that every child is unique 
-                  and deserves care that honors their individual personality, interests, and 
-                  developmental timeline.
+                  Our small group sizes allow us to provide individualized
+                  attention that larger centers simply cannot offer. We believe
+                  that every child is unique and deserves care that honors their
+                  individual personality, interests, and developmental timeline.
                 </p>
               </div>
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-joy-orange">15+</div>
-                    <div className="text-sm text-gray-600">Years of Service</div>
+                    <div className="text-3xl font-bold text-joy-orange">
+                      15+
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      Years of Service
+                    </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-joy-orange">200+</div>
+                    <div className="text-3xl font-bold text-joy-orange">
+                      200+
+                    </div>
                     <div className="text-sm text-gray-600">Families Served</div>
                   </div>
                 </div>
@@ -149,9 +183,12 @@ export default function About() {
               <div className="aspect-square bg-gradient-to-br from-joy-orange/20 to-joy-blue/20 rounded-3xl p-8 flex items-center justify-center">
                 <div className="text-center">
                   <Users className="w-24 h-24 text-joy-orange mx-auto mb-6" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Family Values</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Family Values
+                  </h3>
                   <p className="text-gray-600">
-                    Building strong foundations through love, learning, and laughter
+                    Building strong foundations through love, learning, and
+                    laughter
                   </p>
                 </div>
               </div>
@@ -168,12 +205,16 @@ export default function About() {
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These principles guide everything we do and shape the caring environment your child will experience
+              These principles guide everything we do and shape the caring
+              environment your child will experience
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="text-center hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <div className="w-16 h-16 bg-joy-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <value.icon className="w-8 h-8 text-joy-orange" />
@@ -181,7 +222,9 @@ export default function About() {
                   <CardTitle className="text-xl">{value.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{value.description}</CardDescription>
+                  <CardDescription className="text-base">
+                    {value.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -197,7 +240,8 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced, caring professionals are dedicated to your child's development and wellbeing
+              Our experienced, caring professionals are dedicated to your
+              child's development and wellbeing
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -207,7 +251,9 @@ export default function About() {
                   <div className="w-20 h-20 bg-joy-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <GraduationCap className="w-10 h-10 text-joy-blue" />
                   </div>
-                  <CardTitle className="text-xl text-center">{member.name}</CardTitle>
+                  <CardTitle className="text-xl text-center">
+                    {member.name}
+                  </CardTitle>
                   <CardDescription className="text-center text-joy-orange font-semibold">
                     {member.title}
                   </CardDescription>
@@ -222,12 +268,16 @@ export default function About() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Specialties:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      Specialties:
+                    </h4>
                     <ul className="space-y-1">
                       {member.specialties.map((specialty, idx) => (
                         <li key={idx} className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-joy-green" />
-                          <span className="text-sm text-gray-600">{specialty}</span>
+                          <span className="text-sm text-gray-600">
+                            {specialty}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -247,12 +297,16 @@ export default function About() {
               Licenses & Certifications
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We maintain the highest standards through proper licensing and ongoing professional development
+              We maintain the highest standards through proper licensing and
+              ongoing professional development
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="text-center hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <div className="w-16 h-16 bg-joy-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <cert.icon className="w-8 h-8 text-joy-blue" />
@@ -260,7 +314,9 @@ export default function About() {
                   <CardTitle className="text-lg">{cert.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm">{cert.description}</CardDescription>
+                  <CardDescription className="text-sm">
+                    {cert.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -290,34 +346,48 @@ export default function About() {
                 Our Facility
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our home-based facility provides a warm, comfortable environment that feels 
-                familiar and safe to children. We've thoughtfully designed our spaces to 
-                encourage exploration, creativity, and learning while maintaining the 
-                cozy feel of a family home.
+                Our home-based facility provides a warm, comfortable environment
+                that feels familiar and safe to children. We've thoughtfully
+                designed our spaces to encourage exploration, creativity, and
+                learning while maintaining the cozy feel of a family home.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-joy-green" />
-                  <span className="text-gray-700">Secure, fenced outdoor play area</span>
+                  <span className="text-gray-700">
+                    Secure, fenced outdoor play area
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-joy-green" />
-                  <span className="text-gray-700">Age-appropriate learning centers</span>
+                  <span className="text-gray-700">
+                    Age-appropriate learning centers
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-joy-green" />
-                  <span className="text-gray-700">Quiet spaces for naps and rest</span>
+                  <span className="text-gray-700">
+                    Quiet spaces for naps and rest
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-joy-green" />
-                  <span className="text-gray-700">Clean, sanitized throughout the day</span>
+                  <span className="text-gray-700">
+                    Clean, sanitized throughout the day
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-joy-green" />
-                  <span className="text-gray-700">Safety features and child-proofing</span>
+                  <span className="text-gray-700">
+                    Safety features and child-proofing
+                  </span>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-joy-orange hover:bg-joy-orange/90">
+              <Button
+                asChild
+                size="lg"
+                className="bg-joy-orange hover:bg-joy-orange/90"
+              >
                 <Link to="/contact">Schedule a Tour</Link>
               </Button>
             </div>
@@ -332,21 +402,21 @@ export default function About() {
             Experience the Joy Family Difference
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            We'd love to meet you and your child. Schedule a visit to see our 
+            We'd love to meet you and your child. Schedule a visit to see our
             facility and learn more about our programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
+            <Button
+              asChild
+              size="lg"
               variant="secondary"
               className="bg-white text-joy-orange hover:bg-gray-100"
             >
               <Link to="/contact">Schedule a Visit</Link>
             </Button>
-            <Button 
-              asChild 
-              size="lg" 
+            <Button
+              asChild
+              size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-joy-orange"
             >

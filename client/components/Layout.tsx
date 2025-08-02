@@ -40,7 +40,9 @@ export default function Layout({ children }: LayoutProps) {
                 <span className="text-white font-bold text-lg">J</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Js Joy Family</h1>
+                <h1 className="text-xl font-bold text-gray-900">
+                  Js Joy Family
+                </h1>
                 <p className="text-sm text-gray-600">Daycare</p>
               </div>
             </Link>
@@ -55,7 +57,7 @@ export default function Layout({ children }: LayoutProps) {
                     "text-sm font-medium transition-colors hover:text-joy-orange",
                     isActive(item.href)
                       ? "text-joy-orange border-b-2 border-joy-orange pb-1"
-                      : "text-gray-700"
+                      : "text-gray-700",
                   )}
                 >
                   {item.name}
@@ -65,10 +67,13 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Contact Button & Mobile Menu Button */}
             <div className="flex items-center space-x-4">
-              <Button asChild className="hidden md:inline-flex bg-joy-orange hover:bg-joy-orange/90">
+              <Button
+                asChild
+                className="hidden md:inline-flex bg-joy-orange hover:bg-joy-orange/90"
+              >
                 <Link to="/contact">Contact Us</Link>
               </Button>
-              
+
               {/* Mobile menu button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,14 +99,20 @@ export default function Layout({ children }: LayoutProps) {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={cn(
                       "text-base font-medium transition-colors hover:text-joy-orange",
-                      isActive(item.href) ? "text-joy-orange" : "text-gray-700"
+                      isActive(item.href) ? "text-joy-orange" : "text-gray-700",
                     )}
                   >
                     {item.name}
                   </Link>
                 ))}
-                <Button asChild className="bg-joy-orange hover:bg-joy-orange/90 w-full">
-                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  asChild
+                  className="bg-joy-orange hover:bg-joy-orange/90 w-full"
+                >
+                  <Link
+                    to="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     Contact Us
                   </Link>
                 </Button>
@@ -129,8 +140,9 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
-                A small family home daycare run by experienced & certified day care professionals. 
-                We offer children a safe, supportive and friendly learning environment.
+                A small family home daycare run by experienced & certified day
+                care professionals. We offer children a safe, supportive and
+                friendly learning environment.
               </p>
             </div>
 
@@ -153,7 +165,9 @@ export default function Layout({ children }: LayoutProps) {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                Contact Information
+              </h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-joy-orange" />
@@ -161,11 +175,15 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-joy-orange" />
-                  <span className="text-gray-300 text-sm">info@jsjoyfamily.com</span>
+                  <span className="text-gray-300 text-sm">
+                    info@jsjoyfamily.com
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-4 w-4 text-joy-orange" />
-                  <span className="text-gray-300 text-sm">123 Family Lane, Hometown, CA 90210</span>
+                  <span className="text-gray-300 text-sm">
+                    123 Family Lane, Hometown, CA 90210
+                  </span>
                 </div>
                 <div className="pt-2">
                   <p className="text-sm text-gray-400">

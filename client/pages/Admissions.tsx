@@ -13,7 +13,7 @@ export default function Admissions() {
         "Parent handbook and policies",
         "What to bring on your child's first day",
         "Transition support for new families",
-        "Available spots and current openings"
+        "Available spots and current openings",
       ]}
     />
   );

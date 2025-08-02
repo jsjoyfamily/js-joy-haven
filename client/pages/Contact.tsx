@@ -13,7 +13,7 @@ export default function Contact() {
         "Emergency contact procedures",
         "Social media links and updates",
         "Frequently asked questions",
-        "Online tour scheduling system"
+        "Online tour scheduling system",
       ]}
     />
   );
