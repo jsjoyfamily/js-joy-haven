@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        joy: {
+          orange: "hsl(var(--joy-orange))",
+          blue: "hsl(var(--joy-blue))",
+          yellow: "hsl(var(--joy-yellow))",
+          green: "hsl(var(--joy-green))",
+          purple: "hsl(var(--joy-purple))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
