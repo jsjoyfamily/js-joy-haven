@@ -1,6 +1,6 @@
 import path from "path";
-import { createServer } from "./index.js";
-import express from "express";
+import { createServer } from "./index";
+import * as express from "express";
 
 const app = createServer();
 const port = process.env.PORT || 3000;
@@ -25,7 +25,7 @@ app.get("*", (req, res) => {
 app.listen(port, () => {
   console.log(`🚀 Fusion Starter server running on port ${port}`);
   console.log(`📱 Frontend: http://localhost:${port}`);
-  console.log(`���� API: http://localhost:${port}/api`);
+  console.log(`🔧 API: http://localhost:${port}/api`);
 });
 
 // Graceful shutdown

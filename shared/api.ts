@@ -6,9 +6,7 @@
 
 /**
  * Example response type for /api/demo
- * Note: In JavaScript, we can't enforce types at runtime,
- * but we can document the expected structure
  */
-export const DemoResponseExample = {
-  message: "string",
-};
+export interface DemoResponse {
+  message: string;
+}

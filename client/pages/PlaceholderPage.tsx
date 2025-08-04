@@ -10,11 +10,17 @@ import {
 import Layout from "@/components/Layout";
 import { Construction, ArrowLeft, Home } from "lucide-react";
 
+interface PlaceholderPageProps {
+  title: string;
+  description: string;
+  comingSoonFeatures?: string[];
+}
+
 export default function PlaceholderPage({
   title,
   description,
   comingSoonFeatures = [],
-}) {
+}: PlaceholderPageProps) {
   return (
     <Layout>
       <section className="py-16 lg:py-24 bg-gradient-to-br from-joy-blue/10 to-joy-yellow/10">

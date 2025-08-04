@@ -4,7 +4,11 @@ import { cn } from "@/lib/utils";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -17,7 +21,7 @@ export default function Layout({ children }) {
     { name: "Contact", href: "/contact" },
   ];
 
-  const isActive = (href) => {
+  const isActive = (href: string) => {
     if (href === "/") {
       return location.pathname === "/";
     }

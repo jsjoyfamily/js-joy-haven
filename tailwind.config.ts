@@ -1,6 +1,8 @@
+import type { Config } from "tailwindcss";
+
 export default {
   darkMode: ["class"],
-  content: ["./client/**/*.{js,jsx}"],
+  content: ["./client/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -93,4 +95,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+} satisfies Config;
