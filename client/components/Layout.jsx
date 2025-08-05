@@ -1,7 +1,16 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Menu, X, Phone, Mail, MapPin, Heart, Clock, Award } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  Mail,
+  MapPin,
+  Heart,
+  Clock,
+  Award,
+} from "lucide-react";
 import { useState } from "react";
 
 export default function Layout({ children }) {
@@ -41,7 +50,9 @@ export default function Layout({ children }) {
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                   Js Joy Family
                 </h1>
-                <p className="text-sm text-orange-600 font-medium">Daycare & Learning Center</p>
+                <p className="text-sm text-orange-600 font-medium">
+                  Daycare & Learning Center
+                </p>
               </div>
             </Link>
 
@@ -69,7 +80,12 @@ export default function Layout({ children }) {
                 asChild
                 className="hidden md:inline-flex bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <a
+                  href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
                   <Phone className="w-4 h-4" />
                   Contact Us
                 </a>
@@ -149,9 +165,10 @@ export default function Layout({ children }) {
                 </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed mb-6 max-w-md">
-                A nurturing family home daycare providing exceptional care and early education for children 6 months to 4 years old since 2009.
+                A nurturing family home daycare providing exceptional care and
+                early education for children 6 months to 4 years old since 2009.
               </p>
-              
+
               {/* Key Features */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="flex items-center gap-2 text-sm">
@@ -175,7 +192,9 @@ export default function Layout({ children }) {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-6 text-white">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">
+                Quick Links
+              </h3>
               <ul className="space-y-3">
                 {navigation.map((item) => (
                   <li key={item.name}>
@@ -193,7 +212,9 @@ export default function Layout({ children }) {
 
             {/* Enhanced Contact Info */}
             <div>
-              <h3 className="text-lg font-semibold mb-6 text-white">Get In Touch</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">
+                Get In Touch
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
@@ -205,27 +226,43 @@ export default function Layout({ children }) {
                 <div className="flex items-start space-x-3">
                   <Mail className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-medium">info@jsjoyfamily.com</div>
-                    <div className="text-gray-400 text-xs">Send us an email</div>
+                    <div className="text-white font-medium">
+                      info@jsjoyfamily.com
+                    </div>
+                    <div className="text-gray-400 text-xs">
+                      Send us an email
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-medium">123 Family Lane</div>
-                    <div className="text-gray-400 text-xs">Hometown, CA 90210</div>
+                    <div className="text-white font-medium">
+                      123 Family Lane
+                    </div>
+                    <div className="text-gray-400 text-xs">
+                      Hometown, CA 90210
+                    </div>
                   </div>
                 </div>
-                
+
                 <div className="pt-4 border-t border-gray-700">
                   <div className="text-sm">
-                    <div className="text-orange-400 font-semibold mb-1">Hours:</div>
+                    <div className="text-orange-400 font-semibold mb-1">
+                      Hours:
+                    </div>
                     <div className="text-gray-300 text-xs">Monday - Friday</div>
-                    <div className="text-gray-300 text-xs">7:00 AM - 6:00 PM</div>
+                    <div className="text-gray-300 text-xs">
+                      7:00 AM - 6:00 PM
+                    </div>
                   </div>
                   <div className="text-sm mt-3">
-                    <div className="text-orange-400 font-semibold mb-1">Ages:</div>
-                    <div className="text-gray-300 text-xs">6 months to 4 years</div>
+                    <div className="text-orange-400 font-semibold mb-1">
+                      Ages:
+                    </div>
+                    <div className="text-gray-300 text-xs">
+                      6 months to 4 years
+                    </div>
                   </div>
                 </div>
               </div>
@@ -236,7 +273,8 @@ export default function Layout({ children }) {
           <div className="border-t border-gray-700 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm text-center md:text-left">
-                © 2024 Js Joy Family Daycare. All rights reserved. Licensed Family Daycare Provider.
+                © 2024 Js Joy Family Daycare. All rights reserved. Licensed
+                Family Daycare Provider.
               </div>
               <div className="mt-4 md:mt-0">
                 <Button
@@ -244,7 +282,13 @@ export default function Layout({ children }) {
                   size="sm"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
                 >
-                  <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer">Schedule a Visit</a>
+                  <a
+                    href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Schedule a Visit
+                  </a>
                 </Button>
               </div>
             </div>

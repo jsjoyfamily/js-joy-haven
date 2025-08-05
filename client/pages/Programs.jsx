@@ -36,23 +36,27 @@ export default function Programs() {
     {
       icon: Heart,
       title: "Love-Based Learning",
-      description: "Every lesson is built on a foundation of care, respect, and emotional security"
+      description:
+        "Every lesson is built on a foundation of care, respect, and emotional security",
     },
     {
       icon: Brain,
       title: "Developmentally Appropriate",
-      description: "Activities designed specifically for each age group's cognitive and physical abilities"
+      description:
+        "Activities designed specifically for each age group's cognitive and physical abilities",
     },
     {
       icon: Users,
       title: "Individual Attention",
-      description: "Small group sizes ensure personalized care and learning experiences"
+      description:
+        "Small group sizes ensure personalized care and learning experiences",
     },
     {
       icon: Target,
       title: "Goal-Oriented",
-      description: "Clear learning objectives help children progress toward important milestones"
-    }
+      description:
+        "Clear learning objectives help children progress toward important milestones",
+    },
   ];
 
   const programs = [
@@ -62,27 +66,48 @@ export default function Programs() {
       title: "Infant Care Program",
       age: "6-12 months",
       capacity: "4 children",
-      description: "Gentle, nurturing care focused on building trust and early development milestones",
+      description:
+        "Gentle, nurturing care focused on building trust and early development milestones",
       color: "from-pink-400 to-pink-600",
       borderColor: "border-pink-200",
       bgColor: "bg-pink-50",
       learningAreas: [
         {
           title: "Physical Development",
-          activities: ["Tummy time", "Sensory exploration", "Motor skill exercises", "Safe crawling spaces"]
+          activities: [
+            "Tummy time",
+            "Sensory exploration",
+            "Motor skill exercises",
+            "Safe crawling spaces",
+          ],
         },
         {
           title: "Social-Emotional",
-          activities: ["Caregiver bonding", "Comfort routines", "Emotional security", "Trust building"]
+          activities: [
+            "Caregiver bonding",
+            "Comfort routines",
+            "Emotional security",
+            "Trust building",
+          ],
         },
         {
           title: "Communication",
-          activities: ["Reading aloud", "Singing songs", "Responsive conversations", "Sound exploration"]
+          activities: [
+            "Reading aloud",
+            "Singing songs",
+            "Responsive conversations",
+            "Sound exploration",
+          ],
         },
         {
           title: "Cognitive",
-          activities: ["Cause and effect toys", "Object permanence games", "Visual tracking", "Sensory play"]
-        }
+          activities: [
+            "Cause and effect toys",
+            "Object permanence games",
+            "Visual tracking",
+            "Sensory play",
+          ],
+        },
       ],
       dailySchedule: [
         { time: "7:00-8:00 AM", activity: "Arrival & Free Play" },
@@ -94,7 +119,7 @@ export default function Programs() {
         { time: "1:00-3:00 PM", activity: "Afternoon Nap" },
         { time: "3:00-4:00 PM", activity: "Snack & Music Time" },
         { time: "4:00-5:00 PM", activity: "Story Time & Calm Play" },
-        { time: "5:00-6:00 PM", activity: "Departure Preparations" }
+        { time: "5:00-6:00 PM", activity: "Departure Preparations" },
       ],
       milestones: [
         "Sits without support",
@@ -102,8 +127,8 @@ export default function Programs() {
         "Responds to familiar voices",
         "Shows stranger awareness",
         "Babbles consonant sounds",
-        "Reaches for and grasps toys"
-      ]
+        "Reaches for and grasps toys",
+      ],
     },
     {
       id: "toddlers",
@@ -111,27 +136,48 @@ export default function Programs() {
       title: "Toddler Program",
       age: "1-2 years",
       capacity: "6 children",
-      description: "Active learning through exploration, language development, and social skill building",
+      description:
+        "Active learning through exploration, language development, and social skill building",
       color: "from-blue-400 to-blue-600",
       borderColor: "border-blue-200",
       bgColor: "bg-blue-50",
       learningAreas: [
         {
           title: "Language & Literacy",
-          activities: ["Interactive storytelling", "Vocabulary building", "Picture books", "Singing and rhymes"]
+          activities: [
+            "Interactive storytelling",
+            "Vocabulary building",
+            "Picture books",
+            "Singing and rhymes",
+          ],
         },
         {
           title: "Motor Skills",
-          activities: ["Walking practice", "Climbing activities", "Fine motor toys", "Dance and movement"]
+          activities: [
+            "Walking practice",
+            "Climbing activities",
+            "Fine motor toys",
+            "Dance and movement",
+          ],
         },
         {
           title: "Social Skills",
-          activities: ["Parallel play", "Sharing practice", "Turn-taking games", "Emotional recognition"]
+          activities: [
+            "Parallel play",
+            "Sharing practice",
+            "Turn-taking games",
+            "Emotional recognition",
+          ],
         },
         {
           title: "Independence",
-          activities: ["Self-feeding", "Potty training support", "Cleaning up", "Making choices"]
-        }
+          activities: [
+            "Self-feeding",
+            "Potty training support",
+            "Cleaning up",
+            "Making choices",
+          ],
+        },
       ],
       dailySchedule: [
         { time: "7:00-8:30 AM", activity: "Arrival & Free Choice Play" },
@@ -145,7 +191,7 @@ export default function Programs() {
         { time: "2:30-3:00 PM", activity: "Quiet Waking Activities" },
         { time: "3:00-4:00 PM", activity: "Art & Creative Expression" },
         { time: "4:00-5:00 PM", activity: "Active Play & Movement" },
-        { time: "5:00-6:00 PM", activity: "Story Time & Departure" }
+        { time: "5:00-6:00 PM", activity: "Story Time & Departure" },
       ],
       milestones: [
         "Walks independently",
@@ -153,8 +199,8 @@ export default function Programs() {
         "Follows simple instructions",
         "Shows affection to familiar people",
         "Plays simple pretend games",
-        "Drinks from a cup"
-      ]
+        "Drinks from a cup",
+      ],
     },
     {
       id: "beginners",
@@ -162,27 +208,48 @@ export default function Programs() {
       title: "Beginner Preschool",
       age: "3-4 years",
       capacity: "8 children",
-      description: "School readiness program focused on academic foundations and social development",
+      description:
+        "School readiness program focused on academic foundations and social development",
       color: "from-green-400 to-green-600",
       borderColor: "border-green-200",
       bgColor: "bg-green-50",
       learningAreas: [
         {
           title: "Pre-Academic Skills",
-          activities: ["Letter recognition", "Number concepts", "Pre-writing activities", "Pattern recognition"]
+          activities: [
+            "Letter recognition",
+            "Number concepts",
+            "Pre-writing activities",
+            "Pattern recognition",
+          ],
         },
         {
           title: "Creative Arts",
-          activities: ["Painting and drawing", "Dramatic play", "Music and rhythm", "Craft projects"]
+          activities: [
+            "Painting and drawing",
+            "Dramatic play",
+            "Music and rhythm",
+            "Craft projects",
+          ],
         },
         {
           title: "Science & Discovery",
-          activities: ["Nature exploration", "Simple experiments", "Weather observation", "Plant growing"]
+          activities: [
+            "Nature exploration",
+            "Simple experiments",
+            "Weather observation",
+            "Plant growing",
+          ],
         },
         {
           title: "Social Development",
-          activities: ["Group games", "Conflict resolution", "Friendship skills", "Community helpers"]
-        }
+          activities: [
+            "Group games",
+            "Conflict resolution",
+            "Friendship skills",
+            "Community helpers",
+          ],
+        },
       ],
       dailySchedule: [
         { time: "7:00-8:30 AM", activity: "Arrival & Centers" },
@@ -196,7 +263,7 @@ export default function Programs() {
         { time: "2:00-3:00 PM", activity: "Science & Discovery" },
         { time: "3:00-4:00 PM", activity: "Creative Arts Time" },
         { time: "4:00-5:00 PM", activity: "Gross Motor Activities" },
-        { time: "5:00-6:00 PM", activity: "Story Time & Reflection" }
+        { time: "5:00-6:00 PM", activity: "Story Time & Reflection" },
       ],
       milestones: [
         "Speaks in complete sentences",
@@ -204,42 +271,48 @@ export default function Programs() {
         "Counts to 10",
         "Plays cooperatively",
         "Uses scissors and writing tools",
-        "Follows multi-step directions"
-      ]
-    }
+        "Follows multi-step directions",
+      ],
+    },
   ];
 
   const enrichmentActivities = [
     {
       icon: Music,
       title: "Music & Movement",
-      description: "Daily music activities that enhance rhythm, coordination, and listening skills"
+      description:
+        "Daily music activities that enhance rhythm, coordination, and listening skills",
     },
     {
       icon: Palette,
       title: "Creative Arts",
-      description: "Art projects that encourage self-expression and fine motor development"
+      description:
+        "Art projects that encourage self-expression and fine motor development",
     },
     {
       icon: BookOpen,
       title: "Literacy Focus",
-      description: "Reading readiness activities including phonics, storytelling, and vocabulary building"
+      description:
+        "Reading readiness activities including phonics, storytelling, and vocabulary building",
     },
     {
       icon: Activity,
       title: "Physical Fitness",
-      description: "Age-appropriate exercises and outdoor play for healthy physical development"
+      description:
+        "Age-appropriate exercises and outdoor play for healthy physical development",
     },
     {
       icon: Lightbulb,
       title: "STEM Exploration",
-      description: "Hands-on science, technology, engineering, and math activities"
+      description:
+        "Hands-on science, technology, engineering, and math activities",
     },
     {
       icon: Users,
       title: "Social Learning",
-      description: "Group activities that build cooperation, empathy, and communication skills"
-    }
+      description:
+        "Group activities that build cooperation, empathy, and communication skills",
+    },
   ];
 
   return (
@@ -258,9 +331,11 @@ export default function Programs() {
             </span>
           </h1>
           <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Carefully designed curricula that support your child's development through play-based learning, individual attention, and nurturing care.
+            Carefully designed curricula that support your child's development
+            through play-based learning, individual attention, and nurturing
+            care.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="text-center p-6 bg-white rounded-xl shadow-lg">
               <Baby className="w-12 h-12 text-pink-500 mx-auto mb-3" />
@@ -292,18 +367,26 @@ export default function Programs() {
               Child-Centered Learning Approach
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We believe that children learn best through exploration, play, and meaningful relationships. Our curriculum is designed to meet each child where they are and guide them toward their next developmental milestone.
+              We believe that children learn best through exploration, play, and
+              meaningful relationships. Our curriculum is designed to meet each
+              child where they are and guide them toward their next
+              developmental milestone.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {curriculumApproach.map((approach, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <Card
+                key={index}
+                className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg"
+              >
                 <CardHeader>
                   <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <approach.icon className="w-8 h-8 text-orange-600" />
                   </div>
-                  <CardTitle className="text-lg font-bold">{approach.title}</CardTitle>
+                  <CardTitle className="text-lg font-bold">
+                    {approach.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
@@ -318,13 +401,22 @@ export default function Programs() {
 
       {/* Detailed Programs Sections */}
       {programs.map((program, index) => (
-        <section key={program.id} className={`py-20 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+        <section
+          key={program.id}
+          className={`py-20 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Program Header */}
             <div className="text-center mb-16">
-              <div className={`inline-flex items-center gap-3 px-6 py-3 ${program.bgColor} rounded-full mb-6`}>
-                <program.icon className={`w-6 h-6 text-${program.color.split('-')[1]}-600`} />
-                <span className={`text-${program.color.split('-')[1]}-800 font-semibold`}>
+              <div
+                className={`inline-flex items-center gap-3 px-6 py-3 ${program.bgColor} rounded-full mb-6`}
+              >
+                <program.icon
+                  className={`w-6 h-6 text-${program.color.split("-")[1]}-600`}
+                />
+                <span
+                  className={`text-${program.color.split("-")[1]}-800 font-semibold`}
+                >
                   {program.title}
                 </span>
               </div>
@@ -334,11 +426,15 @@ export default function Programs() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-gray-500" />
-                  <span className="text-lg font-medium text-gray-700">Ages {program.age}</span>
+                  <span className="text-lg font-medium text-gray-700">
+                    Ages {program.age}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-gray-500" />
-                  <span className="text-lg font-medium text-gray-700">{program.capacity}</span>
+                  <span className="text-lg font-medium text-gray-700">
+                    {program.capacity}
+                  </span>
                 </div>
               </div>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -355,14 +451,20 @@ export default function Programs() {
                 </h3>
                 <div className="space-y-6">
                   {program.learningAreas.map((area, idx) => (
-                    <Card key={idx} className={`border-l-4 ${program.borderColor} hover:shadow-lg transition-all duration-300`}>
+                    <Card
+                      key={idx}
+                      className={`border-l-4 ${program.borderColor} hover:shadow-lg transition-all duration-300`}
+                    >
                       <CardHeader className="pb-3">
                         <CardTitle className="text-lg">{area.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                           {area.activities.map((activity, actIdx) => (
-                            <li key={actIdx} className="flex items-center gap-2 text-sm text-gray-600">
+                            <li
+                              key={actIdx}
+                              className="flex items-center gap-2 text-sm text-gray-600"
+                            >
                               <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                               {activity}
                             </li>
@@ -384,9 +486,9 @@ export default function Programs() {
                   <CardContent className="p-0">
                     <div className="space-y-0">
                       {program.dailySchedule.map((item, idx) => (
-                        <div 
-                          key={idx} 
-                          className={`flex items-center gap-4 p-4 ${idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-blue-50 transition-colors`}
+                        <div
+                          key={idx}
+                          className={`flex items-center gap-4 p-4 ${idx % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-blue-50 transition-colors`}
                         >
                           <div className="text-sm font-medium text-gray-700 min-w-[120px]">
                             {item.time}
@@ -410,11 +512,15 @@ export default function Programs() {
                 Developmental Milestones
               </h3>
               <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-                By the end of this program, most children will demonstrate these important developmental achievements:
+                By the end of this program, most children will demonstrate these
+                important developmental achievements:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {program.milestones.map((milestone, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+                  <div
+                    key={idx}
+                    className="flex items-center gap-3 p-3 bg-green-50 rounded-lg"
+                  >
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-sm text-gray-700">{milestone}</span>
                   </div>
@@ -436,18 +542,24 @@ export default function Programs() {
               Enrichment & Special Programs
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Beyond our core curriculum, we offer special activities that enhance learning and make each day exciting and engaging.
+              Beyond our core curriculum, we offer special activities that
+              enhance learning and make each day exciting and engaging.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {enrichmentActivities.map((activity, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
+              <Card
+                key={index}
+                className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
+              >
                 <CardHeader>
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <activity.icon className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-xl font-bold">{activity.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold">
+                    {activity.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
@@ -472,42 +584,59 @@ export default function Programs() {
                 Tracking Your Child's Progress
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                We believe in keeping parents informed about their child's development and achievements through regular communication and assessments.
+                We believe in keeping parents informed about their child's
+                development and achievements through regular communication and
+                assessments.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <BookOpen className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-2">Daily Reports</h4>
-                    <p className="text-gray-600">Detailed daily summaries of activities, meals, naps, and milestones.</p>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Daily Reports
+                    </h4>
+                    <p className="text-gray-600">
+                      Detailed daily summaries of activities, meals, naps, and
+                      milestones.
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-2">Progress Assessments</h4>
-                    <p className="text-gray-600">Quarterly developmental assessments tracking growth in all areas.</p>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Progress Assessments
+                    </h4>
+                    <p className="text-gray-600">
+                      Quarterly developmental assessments tracking growth in all
+                      areas.
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                     <Users className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-2">Parent Conferences</h4>
-                    <p className="text-gray-600">Regular one-on-one meetings to discuss your child's development and goals.</p>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Parent Conferences
+                    </h4>
+                    <p className="text-gray-600">
+                      Regular one-on-one meetings to discuss your child's
+                      development and goals.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8 text-center shadow-lg">
                 <Shield className="w-20 h-20 text-blue-600 mx-auto mb-6" />
@@ -515,15 +644,21 @@ export default function Programs() {
                   Quality Assurance
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Our programs meet and exceed state licensing requirements, ensuring the highest quality care and education for your child.
+                  Our programs meet and exceed state licensing requirements,
+                  ensuring the highest quality care and education for your
+                  child.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white rounded-lg p-4">
                     <div className="text-2xl font-bold text-blue-600">15+</div>
-                    <div className="text-sm text-gray-600">Years Experience</div>
+                    <div className="text-sm text-gray-600">
+                      Years Experience
+                    </div>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <div className="text-2xl font-bold text-green-600">100%</div>
+                    <div className="text-2xl font-bold text-green-600">
+                      100%
+                    </div>
                     <div className="text-sm text-gray-600">Licensed Staff</div>
                   </div>
                 </div>
@@ -541,16 +676,22 @@ export default function Programs() {
             Ready to Enroll?
           </h2>
           <p className="text-xl lg:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Give your child the foundation they need for lifelong learning and success. Schedule a visit to see our programs in action.
+            Give your child the foundation they need for lifelong learning and
+            success. Schedule a visit to see our programs in action.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Button
               asChild
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a
+                href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <Calendar className="w-5 h-5" />
                 Schedule a Tour
               </a>
@@ -567,7 +708,7 @@ export default function Programs() {
               </Link>
             </Button>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />

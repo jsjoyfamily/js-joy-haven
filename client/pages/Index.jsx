@@ -142,16 +142,22 @@ export default function Index() {
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                A nurturing home-based daycare providing personalized care and early education for children 6 months to 4 years old.
+                A nurturing home-based daycare providing personalized care and
+                early education for children 6 months to 4 years old.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button
                   asChild
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-lg px-8 py-4 h-auto shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a
+                    href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
                     <Calendar className="w-5 h-5" />
                     Schedule a Visit
                   </a>
@@ -178,7 +184,9 @@ export default function Index() {
                   <div className="text-sm text-gray-600">Ages Accepted</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-orange-500 mb-1">15+</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-orange-500 mb-1">
+                    15+
+                  </div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">
@@ -189,7 +197,7 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            
+
             {/* Enhanced Visual */}
             <div className="relative">
               <div className="relative z-10">
@@ -202,27 +210,34 @@ export default function Index() {
                       Building Confidence Every Day
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Our nurturing environment helps children develop the confidence and skills they need for lifelong success.
+                      Our nurturing environment helps children develop the
+                      confidence and skills they need for lifelong success.
                     </p>
                   </div>
-                  
+
                   <div className="space-y-3">
                     <div className="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
                       <CheckCircle className="w-5 h-5 text-green-600" />
-                      <span className="text-gray-700 font-medium">State Licensed & Certified</span>
+                      <span className="text-gray-700 font-medium">
+                        State Licensed & Certified
+                      </span>
                     </div>
                     <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
                       <CheckCircle className="w-5 h-5 text-blue-600" />
-                      <span className="text-gray-700 font-medium">Experienced Caregivers</span>
+                      <span className="text-gray-700 font-medium">
+                        Experienced Caregivers
+                      </span>
                     </div>
                     <div className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg">
                       <CheckCircle className="w-5 h-5 text-purple-600" />
-                      <span className="text-gray-700 font-medium">Home-Like Environment</span>
+                      <span className="text-gray-700 font-medium">
+                        Home-Like Environment
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-gradient-to-br from-yellow-200 to-orange-300 rounded-full opacity-20"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-br from-blue-200 to-purple-300 rounded-full opacity-20"></div>
@@ -242,10 +257,11 @@ export default function Index() {
               What Makes Us Special
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We provide more than just childcare - we create a foundation for lifelong learning and happiness
+              We provide more than just childcare - we create a foundation for
+              lifelong learning and happiness
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <Card
@@ -253,10 +269,14 @@ export default function Index() {
                 className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
               >
                 <CardHeader className="pb-4">
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${feature.color}`}>
+                  <div
+                    className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${feature.color}`}
+                  >
                     <feature.icon className="w-8 h-8" />
                   </div>
-                  <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold">
+                    {feature.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
@@ -280,32 +300,46 @@ export default function Index() {
               Age-Appropriate Learning
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Carefully designed programs that support your child's development at every stage
+              Carefully designed programs that support your child's development
+              at every stage
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programs.map((program, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
+              >
                 <div className={`h-2 bg-gradient-to-r ${program.color}`}></div>
                 <CardHeader className="text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-r ${program.color} rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg`}>
+                  <div
+                    className={`w-20 h-20 bg-gradient-to-r ${program.color} rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg`}
+                  >
                     <program.icon className="w-10 h-10 text-white" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">{program.title}</CardTitle>
+                  <CardTitle className="text-2xl font-bold">
+                    {program.title}
+                  </CardTitle>
                   <CardDescription className="text-lg font-semibold text-orange-600">
                     Ages {program.age}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <p className="text-gray-600 leading-relaxed">{program.description}</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {program.description}
+                  </p>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-3">What We Focus On:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-3">
+                      What We Focus On:
+                    </h4>
                     <ul className="space-y-2">
                       {program.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center space-x-3">
                           <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                          <span className="text-sm text-gray-600">{feature}</span>
+                          <span className="text-sm text-gray-600">
+                            {feature}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -314,7 +348,7 @@ export default function Index() {
               </Card>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Button
               asChild
@@ -339,40 +373,56 @@ export default function Index() {
                 Your Child's Second Home
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                With over 15 years of experience, we understand that choosing the right daycare is one of the most important decisions you'll make as a parent.
+                With over 15 years of experience, we understand that choosing
+                the right daycare is one of the most important decisions you'll
+                make as a parent.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start space-x-3">
                   <Award className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Licensed & Certified</h4>
-                    <p className="text-gray-600 text-sm">State approved facility</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Licensed & Certified
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      State approved facility
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Flexible Hours</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      Flexible Hours
+                    </h4>
                     <p className="text-gray-600 text-sm">7:00 AM - 6:00 PM</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Users className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Small Groups</h4>
-                    <p className="text-gray-600 text-sm">Individual attention</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Small Groups
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Individual attention
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Heart className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Family Oriented</h4>
-                    <p className="text-gray-600 text-sm">Warm, caring environment</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Family Oriented
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Warm, caring environment
+                    </p>
                   </div>
                 </div>
               </div>
-              
+
               <Button
                 asChild
                 size="lg"
@@ -382,7 +432,7 @@ export default function Index() {
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
-            
+
             <div className="relative">
               <div className="bg-gradient-to-br from-orange-100 to-blue-100 rounded-3xl p-8 text-center shadow-lg">
                 <div className="mb-6">
@@ -392,16 +442,23 @@ export default function Index() {
                   Family-Centered Care
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Every child is treated like family in our warm, nurturing environment where relationships matter.
+                  Every child is treated like family in our warm, nurturing
+                  environment where relationships matter.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="bg-white rounded-lg p-4">
-                    <div className="text-2xl font-bold text-orange-500">200+</div>
+                    <div className="text-2xl font-bold text-orange-500">
+                      200+
+                    </div>
                     <div className="text-sm text-gray-600">Families Served</div>
                   </div>
                   <div className="bg-white rounded-lg p-4">
-                    <div className="text-2xl font-bold text-orange-500">15+</div>
-                    <div className="text-sm text-gray-600">Years Experience</div>
+                    <div className="text-2xl font-bold text-orange-500">
+                      15+
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      Years Experience
+                    </div>
                   </div>
                 </div>
               </div>
@@ -424,10 +481,13 @@ export default function Index() {
               Hear from the families who trust us with their most precious gifts
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <Card
+                key={index}
+                className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg"
+              >
                 <CardContent className="p-8">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -441,8 +501,12 @@ export default function Index() {
                     "{testimonial.text}"
                   </blockquote>
                   <div className="border-t pt-4">
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
+                    <div className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {testimonial.role}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -459,16 +523,22 @@ export default function Index() {
             Ready to Join Our Family?
           </h2>
           <p className="text-xl lg:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Give your child the loving care and quality education they deserve in our nurturing home environment.
+            Give your child the loving care and quality education they deserve
+            in our nurturing home environment.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Button
               asChild
               size="lg"
               className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a
+                href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <Calendar className="w-5 h-5" />
                 Schedule a Visit
               </a>
@@ -485,7 +555,7 @@ export default function Index() {
               </Link>
             </Button>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
