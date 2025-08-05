@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Programs", href: "/programs" },
-    { name: "Admissions", href: "/admissions" },
+    { name: "For Parents", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
