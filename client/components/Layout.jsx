@@ -14,7 +14,6 @@ export default function Layout({ children }) {
     { name: "Programs", href: "/programs" },
     { name: "For Parents", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
   ];
 
   const isActive = (href) => {
@@ -70,10 +69,10 @@ export default function Layout({ children }) {
                 asChild
                 className="hidden md:inline-flex bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <Link to="/contact" className="flex items-center gap-2">
+                <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   Contact Us
-                </Link>
+                </a>
               </Button>
 
               {/* Mobile menu button */}
@@ -113,14 +112,16 @@ export default function Layout({ children }) {
                   asChild
                   className="mx-4 mt-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
                 >
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
                     Contact Us
-                  </Link>
+                  </a>
                 </Button>
               </nav>
             </div>
@@ -243,7 +244,7 @@ export default function Layout({ children }) {
                   size="sm"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
                 >
-                  <Link to="/contact">Schedule a Visit</Link>
+                  <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer">Schedule a Visit</a>
                 </Button>
               </div>
             </div>
