@@ -550,10 +550,10 @@ export default function Programs() {
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Link to="/contact" className="flex items-center gap-2">
+              <a href="https://forms.gle/krsWqr5g7Ch8YWpAA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
                 Schedule a Tour
-              </Link>
+              </a>
             </Button>
             <Button
               asChild
