@@ -11,7 +11,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Admissions from "./pages/Admissions";
 import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -37,4 +37,13 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+// Ensure root is only created once to prevent HMR issues
+const container = document.getElementById("root");
+let root = container._reactRoot;
+
+if (!root) {
+  root = createRoot(container);
+  container._reactRoot = root;
+}
+
+root.render(<App />);
