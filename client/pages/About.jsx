@@ -562,7 +562,15 @@ export default function About() {
                 size="lg"
                 className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white"
               >
-                <Link to="/contact">Schedule a Tour</Link>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfA_LzmW0BjxkdBaHyHiKzBGUBHLdAw1N1HDaiPuHR8C-AG1A/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Schedule a Tour
+                </a>
               </Button>
             </div>
           </div>
