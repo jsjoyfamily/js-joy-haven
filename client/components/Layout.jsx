@@ -219,7 +219,9 @@ export default function Layout({ children }) {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-medium">+1 650 761 0969</div>
+                    <div className="text-white font-medium">
+                      +1 650 761 0969
+                    </div>
                     <div className="text-gray-400 text-xs">Call or Text</div>
                   </div>
                 </div>
@@ -237,9 +239,7 @@ export default function Layout({ children }) {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-medium">
-                      3428 Golf Dr
-                    </div>
+                    <div className="text-white font-medium">3428 Golf Dr</div>
                     <div className="text-gray-400 text-xs">
                       San Jose, CA 95127
                     </div>
