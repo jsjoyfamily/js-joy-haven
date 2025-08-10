@@ -41,8 +41,8 @@ export default function Admissions() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -269,7 +269,7 @@ export default function Admissions() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div
               className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
-              onClick={() => scrollToSection('tuition')}
+              onClick={() => scrollToSection("tuition")}
             >
               <DollarSign className="w-12 h-12 text-green-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Tuition & Fees</h3>
@@ -277,7 +277,7 @@ export default function Admissions() {
             </div>
             <div
               className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
-              onClick={() => scrollToSection('calendar')}
+              onClick={() => scrollToSection("calendar")}
             >
               <Calendar className="w-12 h-12 text-blue-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Calendar & Events</h3>
@@ -285,7 +285,7 @@ export default function Admissions() {
             </div>
             <div
               className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
-              onClick={() => scrollToSection('communication')}
+              onClick={() => scrollToSection("communication")}
             >
               <MessageCircle className="w-12 h-12 text-purple-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Family Communication</h3>
@@ -453,7 +453,10 @@ export default function Admissions() {
       </section>
 
       {/* Calendar Section */}
-      <section id="calendar" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section
+        id="calendar"
+        className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
