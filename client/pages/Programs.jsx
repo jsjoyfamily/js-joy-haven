@@ -422,6 +422,7 @@ export default function Programs() {
       {programs.map((program, index) => (
         <section
           key={program.id}
+          id={program.id}
           className={`py-20 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
