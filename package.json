@@ -17,6 +17,9 @@
     "build:server": "vite build --config vite.config.server.js",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc --noEmit",
     "format.fix": "prettier --write ."
   },
   "dependencies": {
