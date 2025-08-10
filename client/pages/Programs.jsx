@@ -32,6 +32,16 @@ import {
 } from "lucide-react";
 
 export default function Programs() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   const curriculumApproach = [
     {
       icon: Heart,
@@ -337,17 +347,26 @@ export default function Programs() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("infants")}
+            >
               <Baby className="w-12 h-12 text-pink-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Infants</h3>
               <p className="text-sm text-gray-600">6-12 months</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("toddlers")}
+            >
               <Smile className="w-12 h-12 text-blue-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Toddlers</h3>
               <p className="text-sm text-gray-600">1-2 years</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("beginners")}
+            >
               <Star className="w-12 h-12 text-green-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Beginners</h3>
               <p className="text-sm text-gray-600">3-4 years</p>
@@ -403,6 +422,7 @@ export default function Programs() {
       {programs.map((program, index) => (
         <section
           key={program.id}
+          id={program.id}
           className={`py-20 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -687,7 +707,7 @@ export default function Programs() {
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-                href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfA_LzmW0BjxkdBaHyHiKzBGUBHLdAw1N1HDaiPuHR8C-AG1A/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

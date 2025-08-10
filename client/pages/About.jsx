@@ -238,7 +238,15 @@ export default function About() {
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white"
                 >
-                  <Link to="/contact">Schedule a Visit</Link>
+                  <a
+                    href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Schedule a Visit
+                  </a>
                 </Button>
               </div>
             </div>
@@ -554,7 +562,15 @@ export default function About() {
                 size="lg"
                 className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white"
               >
-                <Link to="/contact">Schedule a Tour</Link>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfA_LzmW0BjxkdBaHyHiKzBGUBHLdAw1N1HDaiPuHR8C-AG1A/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Schedule a Tour
+                </a>
               </Button>
             </div>
           </div>

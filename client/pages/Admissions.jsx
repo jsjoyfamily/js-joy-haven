@@ -37,6 +37,16 @@ import {
 } from "lucide-react";
 
 export default function Admissions() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   const tuitionRates = [
     {
       program: "Infant Care",
@@ -257,17 +267,26 @@ export default function Admissions() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("tuition")}
+            >
               <DollarSign className="w-12 h-12 text-green-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Tuition & Fees</h3>
               <p className="text-sm text-gray-600">Transparent pricing</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("calendar")}
+            >
               <Calendar className="w-12 h-12 text-blue-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Calendar & Events</h3>
               <p className="text-sm text-gray-600">Stay up to date</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection("communication")}
+            >
               <MessageCircle className="w-12 h-12 text-purple-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Family Communication</h3>
               <p className="text-sm text-gray-600">Always connected</p>
@@ -277,7 +296,7 @@ export default function Admissions() {
       </section>
 
       {/* Tuition Section */}
-      <section className="py-20 bg-white">
+      <section id="tuition" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
@@ -434,7 +453,10 @@ export default function Admissions() {
       </section>
 
       {/* Calendar Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section
+        id="calendar"
+        className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
@@ -535,7 +557,7 @@ export default function Admissions() {
       </section>
 
       {/* Family Communication Section */}
-      <section className="py-20 bg-white">
+      <section id="communication" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-4">
@@ -640,7 +662,7 @@ export default function Admissions() {
               className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-                href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfA_LzmW0BjxkdBaHyHiKzBGUBHLdAw1N1HDaiPuHR8C-AG1A/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
