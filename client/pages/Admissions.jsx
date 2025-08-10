@@ -37,6 +37,16 @@ import {
 } from "lucide-react";
 
 export default function Admissions() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const tuitionRates = [
     {
       program: "Infant Care",
