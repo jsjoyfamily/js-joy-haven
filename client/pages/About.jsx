@@ -238,7 +238,15 @@ export default function About() {
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white"
                 >
-                  <Link to="/contact">Schedule a Visit</Link>
+                  <a
+                    href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Schedule a Visit
+                  </a>
                 </Button>
               </div>
             </div>
