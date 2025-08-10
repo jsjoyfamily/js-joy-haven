@@ -94,13 +94,13 @@ mkdir -p client/__tests__
 Example test file (`client/__tests__/example.test.js`):
 
 ```javascript
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect } from "vitest";
 
-describe('Basic functionality', () => {
-  it('should pass a basic test', () => {
-    expect(1 + 1).toBe(2)
-  })
-})
+describe("Basic functionality", () => {
+  it("should pass a basic test", () => {
+    expect(1 + 1).toBe(2);
+  });
+});
 ```
 
 ---
@@ -115,6 +115,7 @@ npm run dev
 ```
 
 **Expected output**:
+
 ```
 VITE v6.x.x ready in Xxx ms
 
@@ -125,18 +126,21 @@ VITE v6.x.x ready in Xxx ms
 ### 2. Access the Application
 
 Open your web browser and navigate to:
+
 - **Local**: http://localhost:8080/
 - **Network**: Use the network URL if testing from other devices
 
 ### 3. Verify Core Functionality
 
 #### ✅ Navigation Testing
+
 - [ ] Click all navigation links (Home, About Us, Programs, For Parents, Gallery)
 - [ ] Verify each page loads correctly
 - [ ] Check that URLs change appropriately
 - [ ] Test the mobile menu (resize browser or use mobile device)
 
 #### ✅ Page Content Testing
+
 - [ ] **Homepage**: Verify hero section, feature cards, and testimonials load
 - [ ] **About Us**: Check statistics, story section, and team profiles
 - [ ] **Programs**: Verify program cards and curriculum information
@@ -144,18 +148,22 @@ Open your web browser and navigate to:
 - [ ] **Gallery**: Verify image categories and photo grid
 
 #### ✅ Interactive Elements Testing
+
 - [ ] Contact form links open correctly
 - [ ] Phone number links work (should open phone app)
 - [ ] External links open in new tabs
 - [ ] Image galleries and modals function properly
 
 #### ✅ Responsive Design Testing
+
 Test the website at different screen sizes:
+
 - [ ] **Desktop**: 1920x1080, 1366x768
 - [ ] **Tablet**: 768x1024 (iPad)
 - [ ] **Mobile**: 375x667 (iPhone), 360x640 (Android)
 
 **How to test responsiveness**:
+
 1. Use browser developer tools (F12)
 2. Click the device toggle icon
 3. Test different device presets
@@ -168,12 +176,14 @@ Test the website at different screen sizes:
 Test the website in multiple browsers to ensure compatibility:
 
 ### Desktop Browsers
+
 - [ ] **Chrome** (latest version)
 - [ ] **Firefox** (latest version)
 - [ ] **Safari** (macOS only)
 - [ ] **Edge** (latest version)
 
 ### Mobile Browsers
+
 - [ ] **Chrome Mobile** (Android)
 - [ ] **Safari Mobile** (iOS)
 - [ ] **Firefox Mobile**
@@ -201,6 +211,7 @@ curl http://localhost:8080/api/demo
 ```
 
 **Using browser**: Navigate directly to:
+
 - http://localhost:8080/api/ping
 - http://localhost:8080/api/demo
 
@@ -240,6 +251,7 @@ Use Chrome DevTools Lighthouse for performance analysis:
 #### Development Server Won't Start
 
 **Error**: `Port 8080 already in use`
+
 ```bash
 # Kill process using port 8080
 npx kill-port 8080
@@ -251,6 +263,7 @@ npm run dev -- --port 3000
 #### Node.js Version Issues
 
 **Error**: `Node.js version not supported`
+
 ```bash
 # Check current version
 node --version
@@ -295,12 +308,14 @@ If you encounter issues:
 Use this checklist for comprehensive testing:
 
 ### Pre-Testing Setup
+
 - [ ] Node.js 18+ installed
 - [ ] Dependencies installed (`npm install`)
 - [ ] Development server starts without errors
 - [ ] Browser opens to localhost:8080
 
 ### Functional Testing
+
 - [ ] All pages load successfully
 - [ ] Navigation works correctly
 - [ ] Contact forms/links function
@@ -309,18 +324,21 @@ Use this checklist for comprehensive testing:
 - [ ] API endpoints respond correctly
 
 ### Cross-Browser Testing
+
 - [ ] Chrome desktop/mobile
 - [ ] Firefox desktop/mobile
 - [ ] Safari (if available)
 - [ ] Edge
 
 ### Performance Testing
+
 - [ ] Lighthouse scores 90+
 - [ ] Page load under 3 seconds
 - [ ] No console errors
 - [ ] Smooth user interactions
 
 ### Final Checks
+
 - [ ] All content displays correctly
 - [ ] Contact information is accurate
 - [ ] External links work
@@ -352,6 +370,7 @@ Consider adding these test types as the project grows:
 Before deploying to production:
 
 ### Build Testing
+
 ```bash
 # Create production build
 npm run build
@@ -363,6 +382,7 @@ npm start
 ```
 
 ### Production Checklist
+
 - [ ] Build completes without errors
 - [ ] Production site loads correctly
 - [ ] All functionality works as expected
