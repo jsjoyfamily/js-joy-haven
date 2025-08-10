@@ -396,7 +396,7 @@ export default function Index() {
                     <h4 className="font-semibold text-gray-900">
                       Flexible Hours
                     </h4>
-                    <p className="text-gray-600 text-sm">7:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600 text-sm">8:30 AM - 5:30 PM</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -559,11 +559,11 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>(555) 123-4567</span>
+              <span>+1 650 761 0969</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
-              <span>123 Family Lane, Hometown, CA</span>
+              <span>3428 Golf Dr, San Jose, CA 95127</span>
             </div>
           </div>
         </div>
