@@ -342,7 +342,7 @@ export default function Gallery() {
                 className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 h-auto text-lg font-semibold transition-all duration-300"
               >
                 <a
-                  href="tel:(555) 123-4567"
+                  href="tel:+16507610969"
                   className="flex items-center gap-2"
                 >
                   <Users className="w-5 h-5" />
