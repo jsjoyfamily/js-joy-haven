@@ -219,7 +219,7 @@ export default function Layout({ children }) {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="text-white font-medium">(555) 123-4567</div>
+                    <div className="text-white font-medium">+1 650 761 0969</div>
                     <div className="text-gray-400 text-xs">Call or Text</div>
                   </div>
                 </div>
@@ -227,7 +227,7 @@ export default function Layout({ children }) {
                   <Mail className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-white font-medium">
-                      info@jsjoyfamily.com
+                      jayabijjala@gmail.com
                     </div>
                     <div className="text-gray-400 text-xs">
                       Send us an email
@@ -238,10 +238,10 @@ export default function Layout({ children }) {
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-white font-medium">
-                      123 Family Lane
+                      3428 Golf Dr
                     </div>
                     <div className="text-gray-400 text-xs">
-                      Hometown, CA 90210
+                      San Jose, CA 95127
                     </div>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function Layout({ children }) {
                     </div>
                     <div className="text-gray-300 text-xs">Monday - Friday</div>
                     <div className="text-gray-300 text-xs">
-                      7:00 AM - 6:00 PM
+                      8:30 AM - 5:30 PM
                     </div>
                   </div>
                   <div className="text-sm mt-3">

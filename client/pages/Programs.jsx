@@ -712,11 +712,11 @@ export default function Programs() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>(555) 123-4567</span>
+              <span>+1 650 761 0969</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
-              <span>123 Family Lane, Hometown, CA</span>
+              <span>3428 Golf Dr, San Jose, CA 95127</span>
             </div>
           </div>
         </div>
