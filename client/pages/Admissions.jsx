@@ -662,7 +662,7 @@ export default function Admissions() {
               className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 h-auto text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-                href="https://forms.gle/krsWqr5g7Ch8YWpAA"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfA_LzmW0BjxkdBaHyHiKzBGUBHLdAw1N1HDaiPuHR8C-AG1A/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
