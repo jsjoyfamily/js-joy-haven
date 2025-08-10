@@ -248,6 +248,35 @@ npm run build
 npm run preview
 ```
 
+## 🧪 **Testing**
+
+This project includes comprehensive testing setup with Vitest. For detailed testing instructions, see **[TESTING.md](./TESTING.md)**.
+
+### Quick Testing Commands
+
+```bash
+# Run all tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+
+# Type checking
+npm run typecheck
+```
+
+### Local Testing Quick Start
+
+1. **Install dependencies**: `npm install`
+2. **Start development server**: `npm run dev`
+3. **Open browser**: http://localhost:8080
+4. **Run tests**: `npm test`
+
+For comprehensive testing procedures, browser compatibility testing, API testing, and troubleshooting, see the complete **[Testing Guide](./TESTING.md)**.
+
 ---
 
 ## 📱 **Content Update Checklist**
