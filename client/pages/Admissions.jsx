@@ -267,17 +267,26 @@ export default function Admissions() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection('tuition')}
+            >
               <DollarSign className="w-12 h-12 text-green-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Tuition & Fees</h3>
               <p className="text-sm text-gray-600">Transparent pricing</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection('calendar')}
+            >
               <Calendar className="w-12 h-12 text-blue-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Calendar & Events</h3>
               <p className="text-sm text-gray-600">Stay up to date</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg">
+            <div
+              className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+              onClick={() => scrollToSection('communication')}
+            >
               <MessageCircle className="w-12 h-12 text-purple-500 mx-auto mb-3" />
               <h3 className="font-bold text-gray-900">Family Communication</h3>
               <p className="text-sm text-gray-600">Always connected</p>
