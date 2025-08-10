@@ -501,7 +501,7 @@ export default function Admissions() {
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="font-medium">Monday - Friday</span>
                       <span className="text-green-600 font-semibold">
-                        7:00 AM - 6:00 PM
+                        8:30 AM - 5:30 PM
                       </span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b">
@@ -665,15 +665,15 @@ export default function Admissions() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>(555) 123-4567</span>
+              <span>+1 650 761 0969</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />
-              <span>123 Family Lane, Hometown, CA</span>
+              <span>3428 Golf Dr, San Jose, CA 95127</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              <span>info@jsjoyfamily.com</span>
+              <span>jayabijjala@gmail.com</span>
             </div>
           </div>
         </div>

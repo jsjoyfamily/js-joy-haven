@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Admissions from "./pages/Admissions";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

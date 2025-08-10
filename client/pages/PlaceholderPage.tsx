@@ -82,7 +82,7 @@ export default function PlaceholderPage({
                 variant="outline"
                 className="border-gray-300"
               >
-                <a href="tel:(555)123-4567">Call (555) 123-4567</a>
+                <a href="tel:+16507610969">Call +1 650 761 0969</a>
               </Button>
             </div>
           </div>
