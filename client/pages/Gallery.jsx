@@ -45,7 +45,7 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "/placeholder.svg",
+      src: "/photo.svg",
       alt: "Children playing in our bright, spacious playroom",
       title: "Indoor Play Area",
       category: "facility",
@@ -207,15 +207,15 @@ export default function Gallery() {
             {/* Stats Section */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">15+</div>
+                <div className="text-3xl font-bold text-orange-600">6+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-pink-600">50+</div>
+                <div className="text-3xl font-bold text-pink-600">7+</div>
                 <div className="text-sm text-gray-600">Happy Families</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">8</div>
+                <div className="text-3xl font-bold text-purple-600">12</div>
                 <div className="text-sm text-gray-600">Children Max</div>
               </div>
               <div className="text-center">
@@ -335,17 +335,7 @@ export default function Gallery() {
                   Schedule a Visit
                 </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 h-auto text-lg font-semibold transition-all duration-300"
-              >
-                <a href="tel:+16507610969" className="flex items-center gap-2">
-                  <Users className="w-5 h-5" />
-                  Call Us Today
-                </a>
-              </Button>
+              
             </div>
           </div>
         </section>

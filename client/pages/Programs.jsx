@@ -670,7 +670,7 @@ export default function Programs() {
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white rounded-lg p-4">
-                    <div className="text-2xl font-bold text-blue-600">15+</div>
+                    <div className="text-2xl font-bold text-blue-600">6+</div>
                     <div className="text-sm text-gray-600">
                       Years Experience
                     </div>
