@@ -473,7 +473,7 @@ export default function About() {
               Our Journey
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              15 Years of Milestones
+              3 Years of Milestones
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Every year has brought new achievements, growth, and opportunities
