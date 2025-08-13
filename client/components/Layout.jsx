@@ -41,10 +41,13 @@ export default function Layout({ children }) {
             {/* Enhanced Logo */}
             <Link to="/" className="flex items-center space-x-4 group">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <Heart className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3e5d7cba4a39442dbacdba18064de92b%2F0ced3e0a6e0146d68409ab1369061a2d?format=webp&width=800"
+                    alt="Js Joy Family Daycare Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white"></div>
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
@@ -156,8 +159,12 @@ export default function Layout({ children }) {
             {/* Enhanced About Section */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg">
-                  <Heart className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3e5d7cba4a39442dbacdba18064de92b%2F0ced3e0a6e0146d68409ab1369061a2d?format=webp&width=800"
+                    alt="Js Joy Family Daycare Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Js Joy Family Daycare</h3>
