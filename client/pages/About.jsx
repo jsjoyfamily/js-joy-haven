@@ -138,7 +138,7 @@ export default function About() {
     { year: "2015", event: "Added preschool program" },
     { year: "2018", event: "Achieved perfect state inspection" },
     { year: "2020", event: "Implemented enhanced safety protocols" },
-    { year: "2022", event: "Celebrated 200+ families served" },
+    { year: "2022", event: "Celebrated 7+ families served" },
     { year: "2024", event: "15 years of exceptional care" },
   ];
 
@@ -176,7 +176,7 @@ export default function About() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
             <div className="text-center p-4">
-              <div className="text-3xl font-bold text-orange-500 mb-1">15+</div>
+              <div className="text-3xl font-bold text-orange-500 mb-1">6+</div>
               <div className="text-sm text-gray-600">Years Experience</div>
             </div>
             <div className="text-center p-4">
