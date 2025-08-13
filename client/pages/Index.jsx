@@ -185,7 +185,7 @@ export default function Index() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl lg:text-4xl font-bold text-orange-500 mb-1">
-                    15+
+                    6+
                   </div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
@@ -373,7 +373,7 @@ export default function Index() {
                 Your Child's Second Home
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                With over 15 years of experience, we understand that choosing
+                With over 6 years of experience, we understand that choosing
                 the right daycare is one of the most important decisions you'll
                 make as a parent.
               </p>
@@ -448,13 +448,13 @@ export default function Index() {
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div className="bg-white rounded-lg p-4">
                     <div className="text-2xl font-bold text-orange-500">
-                      200+
+                      7+
                     </div>
                     <div className="text-sm text-gray-600">Families Served</div>
                   </div>
                   <div className="bg-white rounded-lg p-4">
                     <div className="text-2xl font-bold text-orange-500">
-                      15+
+                      6+
                     </div>
                     <div className="text-sm text-gray-600">
                       Years Experience
