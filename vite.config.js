@@ -4,8 +4,7 @@ import path from "path";
 import { createServer } from "./server/index.js";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/js-joy-haven/" : "/",
+export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
