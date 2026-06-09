@@ -17,16 +17,12 @@ import {
   Users,
   Clock,
   BookOpen,
-  Palette,
-  Music,
-  Activity,
   CheckCircle,
   Calendar,
   MapPin,
   Phone,
   ArrowRight,
   Target,
-  Lightbulb,
   Shield,
   Award,
 } from "lucide-react";
@@ -41,33 +37,6 @@ export default function Programs() {
       });
     }
   };
-
-  const curriculumApproach = [
-    {
-      icon: Heart,
-      title: "Love-Based Learning",
-      description:
-        "Every lesson is built on a foundation of care, respect, and emotional security",
-    },
-    {
-      icon: Brain,
-      title: "Developmentally Appropriate",
-      description:
-        "Activities designed specifically for each age group's cognitive and physical abilities",
-    },
-    {
-      icon: Users,
-      title: "Individual Attention",
-      description:
-        "Small group sizes ensure personalized care and learning experiences",
-    },
-    {
-      icon: Target,
-      title: "Goal-Oriented",
-      description:
-        "Clear learning objectives help children progress toward important milestones",
-    },
-  ];
 
   const programs = [
     {
@@ -286,45 +255,6 @@ export default function Programs() {
     },
   ];
 
-  const enrichmentActivities = [
-    {
-      icon: Music,
-      title: "Music & Movement",
-      description:
-        "Daily music activities that enhance rhythm, coordination, and listening skills",
-    },
-    {
-      icon: Palette,
-      title: "Creative Arts",
-      description:
-        "Art projects that encourage self-expression and fine motor development",
-    },
-    {
-      icon: BookOpen,
-      title: "Literacy Focus",
-      description:
-        "Reading readiness activities including phonics, storytelling, and vocabulary building",
-    },
-    {
-      icon: Activity,
-      title: "Physical Fitness",
-      description:
-        "Age-appropriate exercises and outdoor play for healthy physical development",
-    },
-    {
-      icon: Lightbulb,
-      title: "STEM Exploration",
-      description:
-        "Hands-on science, technology, engineering, and math activities",
-    },
-    {
-      icon: Users,
-      title: "Social Learning",
-      description:
-        "Group activities that build cooperation, empathy, and communication skills",
-    },
-  ];
-
   return (
     <Layout>
       {/* Hero Section */}
@@ -371,49 +301,6 @@ export default function Programs() {
               <h3 className="font-bold text-gray-900">Beginners</h3>
               <p className="text-sm text-gray-600">3-4 years</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold mb-4">
-              Our Philosophy
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Child-Centered Learning Approach
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We believe that children learn best through exploration, play, and
-              meaningful relationships. Our curriculum is designed to meet each
-              child where they are and guide them toward their next
-              developmental milestone.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {curriculumApproach.map((approach, index) => (
-              <Card
-                key={index}
-                className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg"
-              >
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <approach.icon className="w-8 h-8 text-orange-600" />
-                  </div>
-                  <CardTitle className="text-lg font-bold">
-                    {approach.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    {approach.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -551,47 +438,6 @@ export default function Programs() {
         </section>
       ))}
 
-      {/* Enrichment Activities */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-4">
-              Special Activities
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Enrichment & Special Programs
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Beyond our core curriculum, we offer special activities that
-              enhance learning and make each day exciting and engaging.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {enrichmentActivities.map((activity, index) => (
-              <Card
-                key={index}
-                className="text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
-              >
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <activity.icon className="w-8 h-8 text-purple-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">
-                    {activity.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    {activity.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Assessment & Progress */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -720,7 +566,7 @@ export default function Programs() {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 h-auto text-lg font-semibold"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 h-auto text-lg font-semibold"
             >
               <Link to="/admissions" className="flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />

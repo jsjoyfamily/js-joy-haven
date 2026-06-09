@@ -671,17 +671,6 @@ export default function Admissions() {
                 Schedule a Tour
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 h-auto text-lg font-semibold"
-            >
-              <Link to="/programs" className="flex items-center gap-2">
-                <BookOpen className="w-5 h-5" />
-                View Programs
-              </Link>
-            </Button>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/90">
