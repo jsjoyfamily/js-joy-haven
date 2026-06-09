@@ -19,7 +19,6 @@ export default function Layout({ children }) {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
     { name: "Programs", href: "/programs" },
     { name: "For Parents", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },

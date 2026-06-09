@@ -103,9 +103,9 @@ export default function PlaceholderPage({
               variant="ghost"
               className="text-gray-600 hover:text-gray-900"
             >
-              <Link to="/about">
+              <Link to="/">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Learn About Us
+                Back to Home
               </Link>
             </Button>
           </div>
