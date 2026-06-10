@@ -51,8 +51,8 @@ export default function Admissions() {
     {
       program: "Infant Care",
       ageRange: "6-12 months",
-      fullTime: "$1,400",
-      partTime: "$850",
+      fullTime: "$2,400",
+      partTime: "$800",
       features: [
         "Individual attention",
         "Flexible feeding",
@@ -63,10 +63,10 @@ export default function Admissions() {
     {
       program: "Toddler Program",
       ageRange: "1-2 years",
-      fullTime: "$1,200",
-      partTime: "$750",
+      fullTime: "$2,100",
+      partTime: "$700",
       features: [
-        "Potty training support",
+        "Individual activities",
         "Language development",
         "Social skills",
         "Creative activities",
@@ -75,13 +75,13 @@ export default function Admissions() {
     {
       program: "Beginner Preschool",
       ageRange: "3-4 years",
-      fullTime: "$1,000",
-      partTime: "$650",
+      fullTime: "$2,000",
+      partTime: "$700",
       features: [
         "School readiness",
         "Pre-academic skills",
         "Independence building",
-        "Group activities",
+        "Potty training support",
       ],
     },
   ];
@@ -102,7 +102,7 @@ export default function Admissions() {
     {
       icon: FileText,
       title: "Sibling Discount",
-      description: "10% discount for second child and beyond",
+      description: "5% discount for second child and beyond",
       details: "Applied automatically to additional children",
     },
   ];
@@ -118,52 +118,121 @@ export default function Admissions() {
 
   const calendarEvents = [
     {
-      date: "January 15",
+      date: "January 1",
+      event: "New Year's Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "3rd Monday, January",
       event: "Martin Luther King Jr. Day",
       type: "Closed",
       color: "bg-red-100 text-red-800",
     },
     {
-      date: "February 14",
-      event: "Valentine's Day Celebration",
-      type: "Special Event",
-      color: "bg-pink-100 text-pink-800",
-    },
-    {
-      date: "February 19",
+      date: "3rd Monday, February",
       event: "Presidents' Day",
       type: "Closed",
       color: "bg-red-100 text-red-800",
     },
     {
-      date: "March 17",
-      event: "St. Patrick's Day Fun",
-      type: "Special Event",
-      color: "bg-green-100 text-green-800",
-    },
-    {
-      date: "April 1-5",
-      event: "Spring Break",
+      date: "March 31",
+      event: "César Chávez Day",
       type: "Closed",
       color: "bg-red-100 text-red-800",
     },
     {
-      date: "May 10",
-      event: "Mother's Day Celebration",
-      type: "Special Event",
-      color: "bg-pink-100 text-pink-800",
-    },
-    {
-      date: "May 27",
+      date: "Last Monday, May",
       event: "Memorial Day",
       type: "Closed",
       color: "bg-red-100 text-red-800",
     },
     {
       date: "June 19",
-      event: "Father's Day Celebration",
-      type: "Special Event",
-      color: "bg-blue-100 text-blue-800",
+      event: "Juneteenth",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "July 4",
+      event: "Independence Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "1st Monday, September",
+      event: "Labor Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "November 11",
+      event: "Veterans Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "4th Thursday, November",
+      event: "Thanksgiving Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "Day after Thanksgiving",
+      event: "Day After Thanksgiving",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "December 24",
+      event: "Christmas Eve",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "December 25",
+      event: "Christmas Day",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "December 26–30",
+      event: "Winter Break",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "December 31",
+      event: "New Year's Eve",
+      type: "Closed",
+      color: "bg-red-100 text-red-800",
+    },
+    {
+      date: "One week in July",
+      event: "Summer Break (dates announced in June)",
+      type: "Closed",
+      color: "bg-orange-100 text-orange-800",
+    },
+  ];
+
+  const specialEvents = [
+    {
+      date: "2nd Sunday, May",
+      event: "Mother's Day Celebration",
+      type: "Celebration",
+      color: "bg-pink-100 text-pink-800",
+    },
+    {
+      date: "October 31",
+      event: "Halloween",
+      type: "Celebration",
+      color: "bg-orange-100 text-orange-800",
+    },
+    {
+      date: "October / November",
+      event: "Diwali",
+      type: "Celebration",
+      color: "bg-yellow-100 text-yellow-800",
     },
   ];
 
@@ -224,6 +293,8 @@ export default function Admissions() {
       title: "Parent Handbook",
       description: "Complete guide to our policies and procedures",
       action: "Download PDF",
+      link: "/js-joy-family-daycare-policies.pdf",
+      download: "Js-Joy-Family-Daycare-Policies.pdf",
     },
     {
       icon: Calendar,
@@ -252,7 +323,7 @@ export default function Admissions() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-blue-500/5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-6">
-            👨‍👩‍👧‍👦 For Parents
+            👨‍👩‍👧‍👦 Stay Informed
           </span>
           <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
             Everything You
@@ -358,10 +429,10 @@ export default function Admissions() {
                     </div>
                     <div className="text-2xl font-bold text-gray-700 mt-2">
                       {rate.partTime}
-                      <span className="text-sm text-gray-500">/month</span>
+                      <span className="text-sm text-gray-500">/week</span>
                     </div>
                     <div className="text-sm text-gray-600">
-                      Part-time (3 days/week)
+                      Part-time (full week)
                     </div>
                   </div>
                   <div>
@@ -477,7 +548,7 @@ export default function Admissions() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                 <CalendarDays className="w-6 h-6 text-blue-600" />
-                Upcoming Events
+                Holiday Calendar
               </h3>
               <div className="space-y-4">
                 {calendarEvents.map((event, index) => (
@@ -538,19 +609,66 @@ export default function Admissions() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="mb-6">
                 <CardHeader>
                   <CardTitle className="text-lg">Holiday Policy</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 text-sm text-gray-600">
-                    <p>• We are closed on all major holidays</p>
+                    <p>• We are closed on all major holidays, as per states calendar</p>
                     <p>• Two weeks advance notice for special closures</p>
-                    <p>• Make-up days available for planned closures</p>
+                    <p>• No make-up days available for planned closures</p>
                     <p>• Emergency closure notifications via app and email</p>
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="mb-6">
+                <CardHeader>
+                  <CardTitle className="text-lg">Birthday Policy</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p>• We love celebrating your child's special day!</p>
+                    <p>• Parents are welcome to bring a store-bought treat to share with the group</p>
+                    <p>• Please notify us at least 2 days in advance so we can plan accordingly</p>
+                    <p>• We are a vegetarian facility — please ensure treats are vegetarian-friendly</p>
+                    <p>• Note: We are NOT a nut-free or dairy-free facility</p>
+                    <p>• Homemade treats are not permitted due to allergy and safety policies</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <Star className="w-6 h-6 text-yellow-500" />
+                Special Events
+              </h3>
+              <div className="space-y-4">
+                {specialEvents.map((event, index) => (
+                  <Card
+                    key={index}
+                    className="hover:shadow-lg transition-all duration-300"
+                  >
+                    <CardContent className="p-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex-1">
+                          <div className="font-semibold text-gray-900">
+                            {event.event}
+                          </div>
+                          <div className="text-sm text-gray-600">
+                            {event.date}
+                          </div>
+                        </div>
+                        <span
+                          className={`px-3 py-1 rounded-full text-xs font-medium ${event.color}`}
+                        >
+                          {event.type}
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -628,13 +746,26 @@ export default function Admissions() {
                   <p className="text-sm text-purple-100 mb-4">
                     {resource.description}
                   </p>
-                  <Button
-                    size="sm"
-                    variant="secondary"
-                    className="bg-white text-purple-600 hover:bg-gray-100"
-                  >
-                    {resource.action}
-                  </Button>
+                  {resource.link ? (
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white text-purple-600 hover:bg-gray-100"
+                    >
+                      <a href={resource.link} download={resource.download}>
+                        {resource.action}
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white text-purple-600 hover:bg-gray-100"
+                    >
+                      {resource.action}
+                    </Button>
+                  )}
                 </div>
               ))}
             </div>
