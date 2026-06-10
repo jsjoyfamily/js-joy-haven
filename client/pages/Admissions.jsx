@@ -224,6 +224,8 @@ export default function Admissions() {
       title: "Parent Handbook",
       description: "Complete guide to our policies and procedures",
       action: "Download PDF",
+      link: "/js-joy-family-daycare-policies.pdf",
+      download: "Js-Joy-Family-Daycare-Policies.pdf",
     },
     {
       icon: Calendar,
@@ -252,7 +254,7 @@ export default function Admissions() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-blue-500/5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold mb-6">
-            👨‍👩‍👧‍👦 For Parents
+            👨‍👩‍👧‍👦 Stay Informed
           </span>
           <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
             Everything You
@@ -628,13 +630,26 @@ export default function Admissions() {
                   <p className="text-sm text-purple-100 mb-4">
                     {resource.description}
                   </p>
-                  <Button
-                    size="sm"
-                    variant="secondary"
-                    className="bg-white text-purple-600 hover:bg-gray-100"
-                  >
-                    {resource.action}
-                  </Button>
+                  {resource.link ? (
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white text-purple-600 hover:bg-gray-100"
+                    >
+                      <a href={resource.link} download={resource.download}>
+                        {resource.action}
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white text-purple-600 hover:bg-gray-100"
+                    >
+                      {resource.action}
+                    </Button>
+                  )}
                 </div>
               ))}
             </div>

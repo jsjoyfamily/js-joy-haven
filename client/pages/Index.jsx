@@ -81,7 +81,7 @@ export default function Index() {
       description:
         "Active learning through play, exploration, and social interaction",
       features: [
-        "Potty training",
+        "Circle time",
         "Language development",
         "Motor skills",
         "Social play",
@@ -98,7 +98,7 @@ export default function Index() {
         "Pre-reading skills",
         "Number concepts",
         "Art & crafts",
-        "Circle time",
+        "Potty training",
       ],
       color: "from-green-400 to-green-600",
     },
@@ -556,7 +556,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold mb-4">
-              Google Reviews
+              Testimonials
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               What Families Say

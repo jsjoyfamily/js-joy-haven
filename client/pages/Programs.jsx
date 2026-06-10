@@ -477,11 +477,10 @@ export default function Programs() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">
-                      Progress Assessments
+                      Fostering engagement 
                     </h4>
                     <p className="text-gray-600">
-                      Quarterly developmental assessments tracking growth in all
-                      areas.
+                      Attendance tracking, digital check-ins, and real-time messaging, photos, and learning updates.
                     </p>
                   </div>
                 </div>
@@ -492,7 +491,7 @@ export default function Programs() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">
-                      Parent Conferences
+                      Parent Meetings
                     </h4>
                     <p className="text-gray-600">
                       Regular one-on-one meetings to discuss your child's

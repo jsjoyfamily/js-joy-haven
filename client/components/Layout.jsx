@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Programs", href: "/programs" },
-    { name: "For Parents", href: "/admissions" },
+    { name: "Stay Informed", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },
   ];
 
