@@ -21,7 +21,6 @@ export default function Layout({ children }) {
     { name: "Home", href: "/" },
     { name: "Programs", href: "/programs" },
     { name: "Stay Informed", href: "/admissions" },
-    { name: "Gallery", href: "/gallery" },
   ];
 
   const isActive = (href) => {
